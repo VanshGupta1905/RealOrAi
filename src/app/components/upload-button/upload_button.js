@@ -23,7 +23,7 @@ const ImageFileButton = () => {
                 display: "flex",
                 flexDirection: "row",
                 justifyContent: "center",
-                
+
             }
         }>
             <div className="image-btn-wrapper">
@@ -31,7 +31,6 @@ const ImageFileButton = () => {
                     Upload Image
                     <input type="file" id="fileInput" hidden onChange={handleImage} />
                 </label>
-                {/* <img src="https://www.w3schools.com/css/paris.jpg" alt="Paris" width="300" height="300" /> */}
                 {selectedImage ? (
                     <img src={selectedImage} alt="Selected Image" width="300" height="300" />
                 ) : (

@@ -21,7 +21,7 @@ const CardFlip = () => {
                 <div className="side">
                     <LoadingWidget />
                 </div>
-                <div className="side back">It's Real</div>
+                <div className="side back">{`It's Real`}</div>
             </div>
         </div>
     );
