@@ -1,0 +1,54 @@
+html,
+body {
+  max-width: 100vw;
+  max-height: 100vh;
+  overflow-x: hidden;
+  cursor: none;
+}
+
+a,
+button,
+input {
+  cursor: none;
+}
+
+
+.blur {
+  overflow: hidden;
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px);
+  position: absolute;
+  height: 100vh;
+  width: 100vw;
+  top: 0;
+  left: 0;
+  z-index: -9;
+  bottom: -50px;
+}
+
+#main {
+  /* display: flex; */
+
+  .part {
+    flex: 1;
+
+  }
+}
+
+#bgVideo {
+  position: fixed;
+  left: 0;
+  top: 0;
+  z-index: -10;
+  width: 100vw;
+  height: 100vh;
+  /* max-height: 100vh; */
+  object-fit: cover;
+}
+
+::selection {
+  background-color: #00ff84;
+  /* Yellow background color for selected text */
+  color: #333;
+  /* Text color for selected text */
+}

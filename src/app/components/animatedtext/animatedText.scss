@@ -1,0 +1,24 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Micro+5&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+.text {
+    font: bold 10rem 'Helvetica', Sans-serif;
+    text-align: center;
+    background-image: url(https://4kwallpapers.com/images/walls/thumbs/3262.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    animation: moveBackground 20s linear infinite;
+    /* Adjust the duration and timing function as needed */
+
+    -webkit-background-clip: text;
+    color: transparent;
+}
+
+@keyframes moveBackground {
+    from {
+        background-position: 0 0;
+    }
+
+    to {
+        background-position: 100% 100%;
+    }
+}

@@ -1,0 +1,52 @@
+.cardflip-container {
+    cursor: pointer;
+    height: 250px;
+    perspective: 600;
+    position: relative;
+    justify-content: center;
+    width: 250px;
+}
+
+.cardflip {
+    height: 100%;
+    position: absolute;
+    top: 15%;
+    align-items: center;
+    justify-content: center;
+    margin-left: 50px;
+    transform-style: preserve-3d;
+    transition: all 1s ease-in-out;
+    width: 100%;
+}
+
+.cardflip.flipped {
+    transform: rotateY(180deg);
+    justify-content: center;
+    align-items: center;
+}
+
+.side {
+    backface-visibility: hidden;
+    border-radius: 6px;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    border: 2px solid #ffffff;
+
+
+    position: absolute;
+    overflow: hidden;
+    justify-content: center;
+    width: 100%;
+}
+
+.back {
+    background: #00000000;
+    color: #ffffff;
+    border: 2px solid #ffffff;
+    font-size: 30px;
+    font-weight: 600;
+
+    text-align: center;
+    transform: rotateY(180deg);
+}
