@@ -1,5 +1,5 @@
 .cardflip-container {
-    cursor: pointer;
+    cursor: none;
     height: 250px;
     perspective: 600;
     position: relative;

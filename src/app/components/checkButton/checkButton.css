@@ -12,11 +12,11 @@
     width: 10em;
     padding: 1em;
     transition: all 0.4s;
-    cursor: pointer;
+    cursor: none;
 }
 
 .button span {
-    cursor: pointer;
+    cursor: none;
     display: inline-block;
     position: relative;
     transition: 0.4s;
