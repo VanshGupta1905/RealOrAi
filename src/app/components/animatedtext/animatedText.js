@@ -2,7 +2,10 @@ import React from 'react'
 import './animatedText.scss'
 const AnimatedText = () => {
     return (
-        <p className="text">Real Or AI</p>
+        <div>
+            <p className="text">D  I  V  E</p>
+            <p className="text-2">Deep Image Verification Engine</p>
+        </div>
     )
 }
 

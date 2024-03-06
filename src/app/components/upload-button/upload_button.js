@@ -3,6 +3,7 @@ import React, { useState } from 'react'
 import './upload_button.scss'
 import CheckButton from "../checkButton/checkButton.js";
 import CardFlip from '../cardFlip/cardFlip';
+import DisplayImage from '../displayImage/displayImage';
 const ImageFileButton = () => {
     const [selectedImage, setSelectedImage] = useState(null);
 
@@ -18,7 +19,11 @@ const ImageFileButton = () => {
         }
     };
     return (
-        <div style={
+        selectedImage ? <DisplayImage>
+            <img src={selectedImage} alt="Selected Image" width="300" height="300" />
+            {/* <CheckButton onClick={() => console.log("clicked")} /> */}
+
+        </DisplayImage> : <div style={
             {
                 display: "flex",
                 flexDirection: "row",
@@ -26,24 +31,16 @@ const ImageFileButton = () => {
 
             }
         }>
+
             <div className="image-btn-wrapper">
                 <label htmlFor="fileInput" className="upload-btn upload-btn-5">
                     Upload Image
                     <input type="file" id="fileInput" hidden onChange={handleImage} />
                 </label>
-                {selectedImage ? (
-                    <img src={selectedImage} alt="Selected Image" width="300" height="300" />
-                ) : (
-                    <p></p>
-                )}
             </div>
-            {
-                selectedImage ? <CheckButton onClick={() => console.log("clicked")} /> : <p></p>
-            }
-            {
-                selectedImage ? <CardFlip /> : <p></p>
-            }
+
         </div>
+
     )
 }
 

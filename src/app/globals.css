@@ -28,10 +28,10 @@ input {
 
 #main {
   /* display: flex; */
-
+  display: flex;
+  flex-direction: column;
   .part {
     flex: 1;
-
   }
 }
 

@@ -12,7 +12,18 @@
     -webkit-background-clip: text;
     color: transparent;
 }
+.text-2 {
+    font: bold 2rem 'Helvetica', Sans-serif;
+    text-align: center;
+    background-image: url(https://4kwallpapers.com/images/walls/thumbs/3262.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    animation: moveBackground 20s linear infinite;
+    /* Adjust the duration and timing function as needed */
 
+    -webkit-background-clip: text;
+    color: transparent;
+}
 @keyframes moveBackground {
     from {
         background-position: 0 0;

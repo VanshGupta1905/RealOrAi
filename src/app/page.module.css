@@ -12,9 +12,10 @@
 
 .main_screen_content {
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   width: 100%;
-  justify-content: left;
+  justify-content: center;
+  align-items: center;
   gap: 4rem;
   padding: 2rem;
   max-height: 100vh;
